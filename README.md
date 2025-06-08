@@ -4,12 +4,12 @@ Final Project Komputasi Numerik yang dikerjakan oleh saya Ahmad Loka sebagai sal
 
 ### Bahas Fungsi Main
 phyton
-f = input("Masukkan fungsi f(x) nya: ")
+`f = input("Masukkan fungsi f(x) nya: ")
 f = sympify(f)
 xl = float(input("Masukkan batas bawahnya (XL): "))
 xu = float(input("Masukkan batas atasnya (XU): "))
 x_real = float(input("Masukkan X sebenarnya: "))
-bagi_dua(xl, xu, x_real, f)
+bagi_dua(xl, xu, x_real, f)`
 
 1. Masukkan input buat fungsinya dalam bentuk string, contoh : f = x*3 + 10*x*2 - 7*x - 196
 2. Jadikan inputan fungsi tersebut menjadi operasi matematika menggunakan sympify
