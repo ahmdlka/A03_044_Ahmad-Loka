@@ -18,23 +18,23 @@ bagi_dua(xl, xu, x_real, f)
 
 ### Bahas Sub-fungsi bagi_dua, Et, dan Ea
 phyton
-def error_true(x_real, xr):
-    return abs((x_real - xr) / x_real) * 100
+`def error_true(x_real, xr):
+    return abs((x_real - xr) / x_real) * 100`
 
 1. Untuk menemukan nilai Error True, yang mana nilai yang didapat dibandingkan dengan nilai variabel sebenarnya
 
 phyton
-def error_aprox(xr, xr_old):
-    return abs((xr - xr_old) / xr) * 100 if xr != 0 else float('inf') 
+`def error_aprox(xr, xr_old):
+    return abs((xr - xr_old) / xr) * 100 if xr != 0 else float('inf') `
 
 1. Untuk menemukan nilai Error Aprox, yang mana nilai yang didapat dibandingkan dengan nilai sebelumnya
-2. Pastikan bahwa Xr != 0, jika tidak float('inf') karena angka 0 bisa menjadi oembagi
+2. Pastikan bahwa Xr != 0, jika tidak float('inf') karena angka 0 bisa menjadi pembagi
 
 phyton
-def bagi_dua(xl, xu, x_real, f):
-    x = symbols('x')
-    xr_old = 0
-    i = 0
+    `def bagi_dua(xl, xu, x_real, f):
+        x = symbols('x')
+        xr_old = 0
+        i = 0`
     
     while True:
         xr = round((xl + xu) / 2, 2)
